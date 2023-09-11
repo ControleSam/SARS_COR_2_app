@@ -199,7 +199,7 @@ def layout(*args):
 
     style_div = styles(
         # position="-webkit-sticky",
-        position="sticky",
+        position="fixed",
         left=0,
         bottom=0,
         # margin=px(0, 0, 0, 0),
