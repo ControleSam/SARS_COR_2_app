@@ -90,13 +90,13 @@ def prepSession():
         st.sidebar.markdown("**-OR-**")
         uploadedFile = st.sidebar.file_uploader("Upload your input file (multiple smiles)", type=['txt','csv'],key='input2',on_change=redo)
         st.sidebar.markdown("""
-    [Example input file](https://)
+    [Example input file](https://github.com/ControleSam/SARS_COR_2_app/blob/main/resources/example.csv)
     """)
     
     st.session_state.available_input = (st.session_state.input1 != "" or st.session_state.input2 != None)
 
     if not st.session_state.available_input:
-        st.info(':arrow_left: :runner: You may start by submitting your molecules in the side bar. The format is one line per molecule with canonical smiles in first column and ChEMBL ID in second column, separated by a comma or a whitespaces. See [this example input](https://) for the format.')
+        st.info(':arrow_left: :runner: You may start by submitting your molecules in the side bar. The format is one line per molecule with canonical smiles in first column and ChEMBL ID in second column, separated by a comma or a whitespaces. See [this example input](https://github.com/ControleSam/SARS_COR_2_app/blob/main/resources/example.csv) for the format.')
     predictBtn = st.sidebar.button('Predict',disabled = not st.session_state.available_input)
     if not st.session_state.get('predictBtn'):
         st.session_state.predictBtn = predictBtn
