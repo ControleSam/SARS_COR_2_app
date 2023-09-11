@@ -3,3 +3,4 @@ pandas
 rdkit-pypi
 numpy
 ipython
+htbuilder
