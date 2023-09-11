@@ -1,4 +1,4 @@
 streamlit
 pandas
-rdkit
+rdkit-pypi
 numpy
