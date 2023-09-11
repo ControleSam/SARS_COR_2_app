@@ -1,0 +1,10 @@
+streamlit
+pandas
+subprocess
+os
+base64
+pickle
+io
+rdkit
+numpy
+webbrowser
