@@ -4,3 +4,4 @@ rdkit-pypi
 numpy
 ipython
 htbuilder
+sklearn
