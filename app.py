@@ -152,10 +152,10 @@ def molFinder():
                     on_change=changeURL
                     )
     changeURL()
-    gotoURLBtn = st.button('Go')
+    # gotoURLBtn = st.button('Go')
     st.markdown(f'<a href="{st.session_state.URL}">Go here</a>', unsafe_allow_html=True)
-    if gotoURLBtn:
-        gotoURL(st.session_state.URL)
+    # if gotoURLBtn:
+    #     gotoURL(st.session_state.URL)
 
 def present():
     # if st.session_state.model_built:
