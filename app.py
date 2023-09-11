@@ -198,7 +198,8 @@ def layout(*args):
     """
 
     style_div = styles(
-        position="fixed",
+        # position="-webkit-sticky",
+        position="sticky",
         left=0,
         bottom=0,
         # margin=px(0, 0, 0, 0),
